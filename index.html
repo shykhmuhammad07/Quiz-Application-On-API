@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Quiz Application</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <h1>Quiz Application </h1>
+      <div class="timer-container">
+        <i class="fas fa-clock"></i>
+        <span id="timer">03:00</span>
+      </div>
+    </div>
+    
+    <div class="progress-container">
+      <span>Question Progress</span>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progress"></div>
+      </div>
+      <span class="progress-text" id="progress-text">0/10</span>
+    </div>
+    
+    <div class="question-container">
+      <p id="ques">Loading Question...</p>
+    </div>
+    
+    <div class="options-container">
+      <label>
+        <input type="radio" name="option" id="input1" />
+        <span class="option-text" id="opt1">Option 1</span>
+      </label>
+      
+      <label>
+        <input type="radio" name="option" id="input2" />
+        <span class="option-text" id="opt2">Option 2</span>
+      </label>
+      
+      <label>
+        <input type="radio" name="option" id="input3" />
+        <span class="option-text" id="opt3">Option 3</span>
+      </label>
+    </div>
+    
+    <div class="btn-container">
+      <button id="btn" onclick="nextQuestion()" disabled>
+        <i class="fas fa-arrow-right"></i> Next Question
+      </button>
+    </div>
+    
+    <div class="quiz-footer">
+      <div class="difficulty">
+        <i class="fas fa-brain"></i>
+        <span>Difficulty: Medium</span>
+      </div>
+      <div class="copyright">
+        &copy; 2025 Professional Quiz App
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
