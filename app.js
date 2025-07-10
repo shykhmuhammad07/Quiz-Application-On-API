@@ -4,6 +4,7 @@
         let opt1 = document.getElementById('opt1');
         let opt2 = document.getElementById('opt2');
         let opt3 = document.getElementById('opt3');
+        let opt4 = document.getElementById('opt4');
         let inputs = document.getElementsByTagName('input');
         let timerDisplay = document.getElementById('timer');
         let index = 0;
@@ -29,6 +30,7 @@
                         option1: options[0],
                         option2: options[1],
                         option3: options[2],
+                        option4: options[3],
                         correctOption: correct
                     };
                 });
@@ -55,6 +57,7 @@
             opt1.innerText = q.option1;
             opt2.innerText = q.option2;
             opt3.innerText = q.option3;
+            opt4.innerText = q.option4;
             getBtn.disabled = true;
             
             updateProgressBar();
